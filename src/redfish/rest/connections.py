@@ -16,13 +16,11 @@
 
 # -*- coding: utf-8 -*-
 """All Connections for interacting with REST."""
-import os
 import time
 import gzip
 import json
 import logging
 import urllib3
-import certifi
 
 from urllib3 import ProxyManager, PoolManager
 from urllib3.exceptions import MaxRetryError, DecodeError

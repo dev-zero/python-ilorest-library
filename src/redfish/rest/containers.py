@@ -18,7 +18,6 @@
 """Containers used for REST requests and responses."""
 import sys
 import json
-import six
 
 try:
     from collections import OrderedDict
