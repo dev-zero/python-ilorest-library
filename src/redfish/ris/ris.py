@@ -24,7 +24,6 @@ import re
 from re import error as regexerr
 
 import sys
-import weakref
 import logging
 import threading
 # Added for py3 compatibility
@@ -241,8 +240,7 @@ class RisMonolith(Dictable):
     """Monolithic cache of RIS data. This takes a :class:`redfish.rest.v1.RestClient` and uses it to
     gather data from a server and saves it in a modifiable database called monolith.
 
-    :param client: client to use for data retrieval. Client is saved as a weakref, using it requires
-                   parenthesis and will not survive if the client used in init is removed.
+    :param client: client to use for data retrieval.
     :type client: :class:`redfish.rest.v1.RestClient`
     :param typepath: The compatibility class to use for differentiating between Redfish/LegacyRest.
     :type typepath: :class:`redfish.rest.ris.Typesandpathdefines`

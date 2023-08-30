@@ -24,14 +24,8 @@ import six
 import json
 import logging
 import textwrap
-import jsonpath_rw
 
-try:
-    from collections import OrderedDict
-except ImportError:
-    from collections.abc import OrderedDict
 from redfish.rest.containers import RisObject
-from redfish.ris.utils import json_traversal
 from .sharedtypes import JSONEncoder
 
 # ---------End of imports---------
